@@ -1,0 +1,57 @@
+name: Bug Report
+description: Report (Bug / Error / Crash) on Minishell Project
+title: "[BUG] "
+labels: 
+  - bug
+  - new
+assignees: []
+
+body:
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: already_exist
+      options:
+        - label: "I've checked to see if the bug has already been reported"
+          required: true
+  - type: input
+    id: discord_username
+    attributes:
+      label: Discord username
+    validations:
+      required: false
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What Happened ?
+      description: A clear and concise description of the bug / problem.
+    validations:
+      required: true
+  - type: textarea
+    id: step_to_reproduce
+    attributes:
+      label: Steps to reproduce the bug / problem.
+      description: Make this '...', Make other thing ...
+    validations:
+      required: true
+  - type: textarea
+    id: what_should_happened
+    attributes:
+      label: What was supposed to happen ?
+      description: 'A clear description of what it should have done if it wasn''t a bug'
+    validations:
+      required: true
+  - type: textarea
+    id: video_screen
+    attributes:
+      label: Screenshot or vidéo
+      description: If possible, please send screenshots or videos to illustrate the problem.
+    validations:
+      required: false
+  - type: textarea
+    id: more_information
+    attributes:
+      label: More informations
+      description: Please, can you say more informations concerning the problem ?
+    validations:
+      required: false
