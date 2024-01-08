@@ -6,7 +6,7 @@
 /*   By: jbadaire <jbadaire@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 09:06:13 by jbadaire          #+#    #+#             */
-/*   Updated: 2023/12/19 14:15:03 by jbadaire         ###   ########.fr       */
+/*   Updated: 2024/01/08 09:45:54 by jbadaire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,6 @@ void	parse_input(t_minishell *shell)
 	if (ft_has_whitepipe(shell) != 0)
 		return (free(shell->sended_line));
 	ft_dispatch_commands(shell);
+	ft_flush_tokens(shell->commands.tokens);
 	free(shell->sended_line);
 }

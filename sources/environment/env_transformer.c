@@ -6,7 +6,7 @@
 /*   By: jbadaire <jbadaire@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:46:17 by jbadaire          #+#    #+#             */
-/*   Updated: 2023/12/04 22:04:06 by jbadaire         ###   ########.fr       */
+/*   Updated: 2024/01/08 10:38:36 by jbadaire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "../dependencies/libft/.includes/memory_utils.h"
 #include <stdlib.h>
 
+#include "stdio.h"
 t_env_map	*env_array_to_map(t_env_map **env_map, char **envp)
 {
 	size_t		index;

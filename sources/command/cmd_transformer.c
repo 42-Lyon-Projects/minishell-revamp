@@ -6,7 +6,7 @@
 /*   By: jbadaire <jbadaire@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 12:48:42 by jbadaire          #+#    #+#             */
-/*   Updated: 2023/12/19 19:34:38 by jbadaire         ###   ########.fr       */
+/*   Updated: 2024/01/08 09:49:52 by jbadaire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include "../../dependencies/libft/.includes/char_utils.h"
 #include <stdlib.h>
 #include "../../dependencies/libft/.includes/ft_printf.h"
-
 
 static void	ft_delete_cmd_space(t_minishell *shell, size_t space_before, size_t space_after, size_t index)
 {

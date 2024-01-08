@@ -6,14 +6,14 @@
 /*   By: jbadaire <jbadaire@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 09:27:22 by jbadaire          #+#    #+#             */
-/*   Updated: 2023/12/18 17:09:15 by jbadaire         ###   ########.fr       */
+/*   Updated: 2024/01/08 10:42:03 by jbadaire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/minishell.h"
-#include <stdio.h>
 #include <readline/readline.h>
 #include <readline/history.h>
+#include <stdlib.h>
 
 static void	ft_shell_loop(t_minishell *shell)
 {
@@ -43,7 +43,6 @@ int	main(int argc, char **argv, char **env)
 	shell.env_map = env_map_init(env);
 	ft_shell_loop(&shell);
 	env_map_flush(shell.env_map);
-	ft_flush_tokens(shell.commands.tokens);
 	rl_clear_history();
 	rl_clear_message();
 	rl_clear_visible_line();
