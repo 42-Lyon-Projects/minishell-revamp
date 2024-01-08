@@ -1,6 +1,7 @@
-/minishell
+### Project Related ###
+minishell
 /build/
-/dependencies/
+/dependencies/libft/build
 
 ### VS Code ###
 .vscode/
