@@ -6,7 +6,7 @@
 /*   By: jbadaire <jbadaire@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 09:43:18 by jbadaire          #+#    #+#             */
-/*   Updated: 2023/11/29 14:13:20 by jbadaire         ###   ########.fr       */
+/*   Updated: 2024/01/08 10:41:28 by jbadaire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ t_env_map	*env_map_add_back(t_env_map **env_map, t_env_map *new_node, int is_imm
 		new_node->is_immutable = 1;
 	if (tmp->key == NULL && tmp->value == NULL)
 	{
+		free(*env_map);
 		*env_map = new_node;
 		return (*env_map);
 	}

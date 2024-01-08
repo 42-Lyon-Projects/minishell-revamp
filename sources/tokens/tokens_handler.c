@@ -6,7 +6,7 @@
 /*   By: jbadaire <jbadaire@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 13:32:12 by jbadaire          #+#    #+#             */
-/*   Updated: 2023/12/05 22:27:21 by jbadaire         ###   ########.fr       */
+/*   Updated: 2024/01/08 09:03:24 by jbadaire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ void	ft_flush_tokens(t_tokens *tokens)
 {
 	t_tokens	*tmp;
 
+	if(!tokens || ft_get_tokens_amount(tokens) < 0)
+		return;
 	while (tokens)
 	{
 		tmp = (tokens)->next;

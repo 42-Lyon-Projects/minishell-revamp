@@ -6,7 +6,7 @@
 /*   By: lunagda <lunagda@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 15:38:24 by jbadaire          #+#    #+#             */
-/*   Updated: 2024/01/04 14:11:34 by lunagda          ###   ########.fr       */
+/*   Updated: 2024/01/08 09:48:25 by jbadaire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	ft_dispatch_commands(t_minishell *shell)
 			ft_concat_quoted_pipes(shell, 0);
 		ft_post_command(shell);
 		command = ft_strtrim(shell->commands.latest_command, " ");
-
 		ft_printf("COMMAND: |%s|\n", command);
 
 		//TODO: Les doubles chevrons dans les String.						// CA A L'AIR D'ETRE BON
